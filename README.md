@@ -1,3 +1,7 @@
+# Ansible Role: Nginx
+
+[![Build Status](https://travis-ci.org/singleplatform-eng/ansible-role-snort.svg?branch=master)](https://travis-ci.org/singleplatform-eng/ansible-role-snort)
+
 Role Name
 =========
 
@@ -291,7 +295,9 @@ BSD
 Author Information
 ------------------
 
+Original Author:
 Larry Smith Jr.
 - @mrlesmithjr
 - http://everythingshouldbevirtual.com
 - mrlesmithjr [at] gmail.com
+
