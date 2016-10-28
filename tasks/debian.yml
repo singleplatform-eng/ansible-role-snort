@@ -4,20 +4,6 @@
     update_cache: "yes"
     cache_valid_time: 86400
 
-- name: debian | installing pre-reqs
-  apt:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - build-essential
-    - ethtool
-    - flex
-    - iproute
-    - libpcap-dev
-    - libpcre3-dev
-    - libdumbnet-dev
-    - zlib1g-dev
-
 - name: debian | installing snort
   apt:
     name: "{{ item }}"

@@ -14,13 +14,13 @@
     - mysql-client
   when: ansible_os_family == "Debian"
 
-- name: barnyard2 | installing add'l pre-reqs
+- name: barnyard2 | installing add pre-reqs
   apt:
     name: "libmariadbclient-dev"
     state: "present"
   when: snort_barnyard2_db_type == "mariadb"
 
-- name: barnyard2 | installing add'l pre-reqs
+- name: barnyard2 | installing add pre-reqs
   apt:
     name: "libmysqlclient-dev"
     state: "present"
