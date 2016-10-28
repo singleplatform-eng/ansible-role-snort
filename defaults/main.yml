@@ -243,3 +243,8 @@ snort_startup: boot
 snort_stats_threshold: 1
 snort_version: 2.9.8.2
 snort_whitelist_path: '/etc/snort/rules'
+snort_unified_logging: true
+snort_fast_logging: false
+snort_log_file: 'snort.log'
+snort_log_packet: false
+snort_log_limit: '128'
