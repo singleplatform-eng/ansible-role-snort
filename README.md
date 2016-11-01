@@ -1,8 +1,6 @@
-# Ansible Role: Nginx
-
 [![Build Status](https://travis-ci.org/singleplatform-eng/ansible-role-snort.svg?branch=master)](https://travis-ci.org/singleplatform-eng/ansible-role-snort)
 
-Role Name
+ansible-role-snort
 =========
 
 Installs and configures Snort IDS https://snort.org/
