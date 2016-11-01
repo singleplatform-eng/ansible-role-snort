@@ -34,6 +34,8 @@ snort_barnyard2_db_type: mysql  #defines the DB type...options are mysql or mari
 snort_barnyard2_enable: false  #defines if barnyard2 should be installed and configured
 snort_barnyard2_logdir: '/var/log/snort'
 snort_barnyard2_waldo_file: '{{ snort_barnyard2_logdir }}/barnyard2.waldo'
+snort_checksum_mode: 'all'
+snort_checksum_drop_mode: 'off'
 snort_community_rules_package: 'community-rules.tar.gz'
 snort_community_rules_url: 'https://snort.org/downloads/community'
 snort_config_oinkmaster: true  #defines if oinkmaster should be configured
@@ -192,7 +194,7 @@ snort_external_net: '!$HOME_NET'  #define external networks..if snort_home_net i
 snort_fedora_package: 'https://www.snort.org/downloads/snort/snort-{{ snort_version }}-1.f21.x86_64.rpm'
 snort_fedora_daq_package: 'https://www.snort.org/downloads/snort/daq-{{ snort_daq_version }}-1.f21.x86_64.rpm'
 snort_home_net: 192.168.0.0/16  #define your home_net..if snort_external_net is any then set this to any
-snort_interface: '{{ ansible_default_ipv4.interface }}'  #defines snort interface to listen on
+snort_interface: '{{ ansible_default_ipv4.interface }}'  #defines snort interface to listen on set to all for all interfaces other than lo
 snort_oinkmaster_dl_package: 'oinkmaster-2.0.tar.gz'
 snort_oinkmaster_dl_url: 'http://prdownloads.sourceforge.net/oinkmaster'
 snort_oinkmaster_rules_url: 'http://rules.emergingthreats.net/open/suricata/emerging.rules.tar.gz'
